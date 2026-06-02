@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import Login from '../pages/login';
 import LatestProducts from '../components/latestProducts';
 import BestSellingProducts from '../components/bestSellingProducts';
-import Navbar from '../components/Navbar';
+import Navbar from './components/Navbar';
 
 
 function App() {

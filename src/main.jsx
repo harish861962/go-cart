@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from '../components/Navbar.jsx';
+import Navbar from './components/Navbar.jsx';
 import Productsdetails from '../components/ProductsDetails.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
