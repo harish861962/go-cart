@@ -1,4 +1,7 @@
 import React from "react";
+import heroModel from "../assets/hero_model_img.png";
+import heroProduct1 from "../assets/hero_product_img1.png";
+import heroProduct2 from "../assets/hero_product_img2.png";
 
 export default function Hero(){
 return(
@@ -8,7 +11,7 @@ return(
     <div className="left-section">
 
     <div className="hero-left-img">
-    <img src="../assets/hero_model_img.png" alt="hero-model-img-1" />
+    <img src={heroModel} alt="hero-model-img-1" />
     </div>
 
     <div className="hero-text">
@@ -25,7 +28,7 @@ return(
 
     <div className="right-section-box1">
 
-<img src="../assets/hero_product_img1.png" alt="hero_product- earbuds-img" alt=""  width={150}/>
+<img src={heroProduct1} alt="hero_product- earbuds-img" alt=""  width={150}/>
 
         <div className="right-section-text">
             
@@ -37,7 +40,7 @@ return(
 
     <div className="right-section-box2">
 
-<img src="../assets/hero_product_img2.png" alt="hero_product- earbuds-img" alt=""  width={150}/>
+<img src={heroProduct2} alt="hero_product- earbuds-img" alt=""  width={150}/>
 
         <div className="right-section-text">
 
