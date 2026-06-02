@@ -50,7 +50,7 @@ const {totalItems} = useCart();
 
  useEffect(() => {
 
-  fetch("http://localhost:4000/bestproducts")
+  fetch("https://go-cart-backend-api.onrender.com/bestproducts")
     .then((res) => res.json())
     .then((data) => {
       setProducts(data);

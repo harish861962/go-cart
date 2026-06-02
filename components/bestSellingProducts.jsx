@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductsHeader from "./ProductsHeader";
+import Productsheader from "./productsheader";
 
 // import Productsheader from "Gocart\gocart\components\Productsheader.jsx";
 
@@ -14,7 +14,7 @@ export default function BestSellingProducts({ showHeader = true }) {
 
     const getbestprodts = async ()=>{
 
-    const url = await fetch("http://localhost:4000/bestproducts");
+    const url = await fetch("https://go-cart-backend-api.onrender.com/bestproducts");
 
          const data =  await url.json();
 

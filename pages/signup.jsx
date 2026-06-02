@@ -1,66 +1,3 @@
-// import React, { useState } from "react";
-
-// export default function Signup() {
-//   const [form, setForm] = useState({
-//     name: "",
-//     email: "",
-//     password: "",
-//   });
-
-//   const handleChange = (e) => {
-//     setForm({ ...form, [e.target.name]: e.target.value });
-//   };
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     const res = await fetch("http://localhost:4000/signupUser", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(form),
-//     });
-
-//     const data = await res.json();
-//     alert(data.message);
-//   };
-
-//   return (
-//     <div>
-//       <h2>Signup</h2>
-
-//       <form onSubmit={handleSubmit}>
-//         <input
-//           name="name"
-//           placeholder="Name"
-//           onChange={handleChange}
-//         />
-//         <br />
-
-//         <input
-//           name="email"
-//           placeholder="Email"
-//           onChange={handleChange}
-//         />
-//         <br />
-
-//         <input
-//           name="password"
-//           placeholder="Password"
-//           type="password"
-//           onChange={handleChange}
-//         />
-//         <br />
-
-//         <button type="submit">Signup</button>
-//       </form>
-//     </div>
-//   );
-// }
-
-
-
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -88,7 +25,7 @@ export default function Signup() {
   }
 
 
-  const res = await fetch("http://localhost:4000/signupUser", {
+  const res = await fetch("https://go-cart-backend-api.onrender.com/signupUser", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -81,13 +81,13 @@ useEffect(() => {
   const getProduct = async () => {
 
     // latest products 
-    let res = await fetch(`http://localhost:4000/products/${slug}`);
+    let res = await fetch(`https://go-cart-backend-api.onrender.com/products/${slug}`);
     let data = await res.json();
 
     // best products
     if (data === null) {
 
-      res = await fetch(`http://localhost:4000/bestproducts/${slug}`);
+      res = await fetch(`https://go-cart-backend-api.onrender.com/bestproducts/${slug}`);
       data = await res.json();
 
     }
@@ -97,10 +97,10 @@ useEffect(() => {
 
      // ALL PRODUCTS
 
-    const alldataUrl = await fetch("http://localhost:4000/products");
+    const alldataUrl = await fetch("https://go-cart-backend-api.onrender.com/products");
     const allData = await alldataUrl.json();
 
-    const bestUrl = await fetch("http://localhost:4000/bestproducts");
+    const bestUrl = await fetch("https://go-cart-backend-api.onrender.com/bestproducts");
 const bestData = await bestUrl.json();
 
 // DONO DATA COMBINE

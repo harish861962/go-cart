@@ -1482,6 +1482,10 @@ justify-content: space-around;
     font-size: 28px;
     line-height: 38px;
   }
+  .cart-badge {
+  position: absolute;
+  top: 120px;
+  right: 310px;}
 
   .hero-text p{
     font-size: 18px;

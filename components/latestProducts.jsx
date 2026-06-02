@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductsHeader from "./ProductsHeader";
+import Productsheader from "./productsheader";
 
 import { useNavigate } from "react-router-dom";
 import slugify from 'slugify';
@@ -14,7 +14,7 @@ export default function LatestProducts({ showHeader = true }) {
     const getProducts = async () => {
 
     const response = await fetch(
-        "http://localhost:4000/products"
+        "https://go-cart-backend-api.onrender.com/products"
     );
 
     const data = await response.json();
