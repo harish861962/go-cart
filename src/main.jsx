@@ -6,14 +6,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar.jsx';
-import Productsdetails from '../components/ProductsDetails.jsx';
+import Productsdetails from './components/ProductsDetails.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Shop from '../pages/shop.jsx';
-import Cart from '../pages/cart.jsx';
+import Shop from './pages/shop.jsx';
+import Cart from './pages/cart.jsx';
 import { CartProvider } from "react-use-cart";
-import Login from '../pages/login.jsx';
-import Signup from '../pages/signup.jsx';
+import Login from './pages/login.jsx';
+import Signup from './pages/signup.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
