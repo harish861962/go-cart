@@ -8,6 +8,7 @@ export default function Navbar(){
     const menuItems = [
   {
     name: "Home",
+    
     path: "/"
   },
 

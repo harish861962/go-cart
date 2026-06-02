@@ -7,19 +7,14 @@ import App from './App.jsx'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // ✅ CORRECT PATHS
-// import Navbar from '../components/Navbar.jsx';
-// import Productsdetails from '../components/ProductsDetails.jsx';
-// import Shop from '../pages/shop.jsx';
-// import Cart from '../pages/cart.jsx';
-// import Login from '../pages/login.jsx';
-// import Signup from '../pages/signup.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Productsdetails from '../components/ProductsDetails.jsx';
+import Shop from '../pages/shop.jsx';
+import Cart from '../pages/cart.jsx';
+import Login from '../pages/login.jsx';
+import Signup from '../pages/signup.jsx';
 
-import Navbar from '@components/Navbar.jsx';
-import Productsdetails from '@components/ProductsDetails.jsx';
-import Shop from '@pages/shop.jsx';
-import Cart from '@pages/cart.jsx';
-import Login from '@pages/login.jsx';
-import Signup from '@pages/signup.jsx';
+
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
