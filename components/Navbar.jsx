@@ -19,7 +19,7 @@ export default function Navbar(){
 
   {
     name: "About us",
-    path: "/about"
+    path: "/aboutus"
   },
 
   {
@@ -98,7 +98,7 @@ return(
                     {filteredProducts.map((prodts, index) => (
                       <div className="srcproduct-cards" key={index}>
 
-                          <Link className="link-h4" to={`/productsdetails/${prodts.name}`} ><h4>{prodts.name}</h4></Link>
+                          <Link className="link-h4" to={`/productsdetails/${prodts.slug}`} ><h4>{prodts.name}</h4></Link>
                           <h5>${prodts.price}</h5>
                         
                         

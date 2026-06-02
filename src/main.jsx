@@ -19,6 +19,8 @@ import Signup from '../pages/signup.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { CartProvider } from "react-use-cart";
+import Aboutus from '../pages/Aboutus.jsx';
+import Contact from '../pages/Conatct.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -30,7 +32,8 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<App />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/cart" element={<Cart/>} />
-      {/* <Route path="/app" element={<App/>} /> */}
+      <Route path="/aboutus" element={<Aboutus/>} />
+      <Route path="/contact" element={<Contact/>} />
 
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
