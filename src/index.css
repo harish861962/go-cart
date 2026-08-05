@@ -1412,7 +1412,7 @@ justify-content: space-around;
 @media (max-width: 768px) {
 
   .main-div {
-    padding: 15px;
+    /* padding: 15px; */
     gap: 15px;
   }
   .logo {
